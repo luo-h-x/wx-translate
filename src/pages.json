@@ -1,16 +1,56 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "没用翻译"
+			}
+		},
+		{
+			"path": "pages/history/index",
+			"style": {
+				"navigationBarTitleText": "翻译历史"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+		"navigationBarTitleText": "没用翻译",
+		"navigationBarBackgroundColor": "#f1e7ff",
+		"backgroundColor": "#f1e7ff"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#177cb0",
+		"borderStyle": "black",
+		"backgroundColor": "#f1e7ff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"selectedIconPath": "static/tabbarIcon/index-selected.png",
+				"iconPath": "static/tabbarIcon/index.png",
+				"text": "翻译"
+			},
+			{
+				"pagePath": "pages/history/index",
+				"selectedIconPath": "static/tabbarIcon/mine-selected.png",
+				"iconPath": "static/tabbarIcon/mine.png",
+				"text": "历史"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "translate", //模式名称
+				"path": "pages/index/index", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	},
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
 }
