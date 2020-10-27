@@ -21,4 +21,4 @@ yarn build
 
 ### 扫码体验(Scanning experience)
 
-![](./src/static/applets.jpg)
+![](https://github.com/luo-h-x/wx-translate/blob/master/src/static/applets.jpg)
