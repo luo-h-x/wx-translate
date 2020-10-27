@@ -21,4 +21,4 @@ yarn build
 
 ### 扫码体验(Scanning experience)
 
-![](C:\Users\xiangni\Desktop\无用翻译\小程序码.jpg)
+![](./src/static/applets.jpg)
